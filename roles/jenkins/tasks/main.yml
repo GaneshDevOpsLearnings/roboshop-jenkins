@@ -1,7 +1,7 @@
 - name: copying the xml file
   ansible.builtin.template:
     src: config.xml
-    dest: templates/config.xml
+    dest: /temp/config.xml
 - name: creating jobs
   community.general.jenkins_job:
     config: "{{ lookup('file', 'templates/config.xml') }}"
