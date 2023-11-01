@@ -3,5 +3,5 @@
     config: "{{ lookup('template', 'templates/job.xml') }}"
     name: "{{item}}"
     password: "{{jenkins_password}}"
-    url: http://172.31.32.182:8080
+    url: http://172.31.45.34:8080
     user: admin
